@@ -12,7 +12,7 @@ Example:<br>
 ![image](https://github.com/user-attachments/assets/f88b700c-bfb9-4d84-a647-cb49d471808c =50)<br>
 ![image](https://github.com/user-attachments/assets/c25f9e83-a6a4-4c98-a7ea-f3bbb543b7c0)<br><br>
 With datetime parameter applied<br>
-![image](https://github.com/user-attachments/assets/2b2e3a8f-f047-48f6-8fc4-9365c78d9ba3 width="200")<br>
+![image](https://github.com/user-attachments/assets/2b2e3a8f-f047-48f6-8fc4-9365c78d9ba3 width="100")<br>
 
 
 
