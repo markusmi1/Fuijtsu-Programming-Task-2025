@@ -8,12 +8,19 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Class for controlling /api/basefee endpoint
+ */
 @RestController
 @RequestMapping("/api/basefee")
 class ApiBaseFeeEndpointController {
     @Autowired
     private BaseFeeService baseFeeService;
 
+    /**
+     * Shows list of base fees
+     * @return base fees
+     */
     @GetMapping
     public Map<String, List<BaseFee>> getAllBaseFees() {
         Map<String, List<BaseFee>> response = new HashMap<>();
@@ -22,6 +29,11 @@ class ApiBaseFeeEndpointController {
         return response;
     }
 
+    /**
+     * Updates base fee of requested city
+     * @param body includes city, vehicleType and newFee
+     * @return response of the put request
+     */
     @PutMapping
     public Map<String, String> putBaseFee(@RequestBody BaseFeeUpdateRequest body) {
         Map<String, String> response = new HashMap<>();

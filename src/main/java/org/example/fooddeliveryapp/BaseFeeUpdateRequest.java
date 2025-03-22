@@ -1,5 +1,8 @@
 package org.example.fooddeliveryapp;
 
+/**
+ * Class for managing Put requests body to change base fee
+ */
 public class BaseFeeUpdateRequest {
     private String city;
     private String vehicleType;

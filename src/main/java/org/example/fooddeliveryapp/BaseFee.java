@@ -5,6 +5,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.*;
 
+/**
+ * Class for BaseFee table in the database
+ */
 
 @Entity
 @Table(name = "base_fees")
