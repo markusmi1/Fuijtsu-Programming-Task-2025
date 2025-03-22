@@ -9,7 +9,7 @@ city - possible values (Tallinn, Tartu, Pärnu)<br>
 vehicleType - possible values (Bike, Car, Scooter)<br>
 dateTime - can be absent, format must be - yyyy-MM-dd'T'HH:mm:ss, if present then shows fee on this particular datetime if data about it is in the database.<br>
 Example:<br>
-<img src="https://github.com/user-attachments/assets/2b2e3a8f-f047-48f6-8fc4-9365c78d9ba3" width="300">
+<img src="https://github.com/user-attachments/assets/2b2e3a8f-f047-48f6-8fc4-9365c78d9ba3" width="600">
 
 ![image](https://github.com/user-attachments/assets/c25f9e83-a6a4-4c98-a7ea-f3bbb543b7c0)<br><br>
 With datetime parameter applied<br>
