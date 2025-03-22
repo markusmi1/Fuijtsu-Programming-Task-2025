@@ -58,8 +58,10 @@ class FoodDeliveryAppApplicationTests {
 	/**
 	 * deletes fake data from database
 	 */
-
-
+	@AfterAll
+	void after(){
+		weatherDataRepository.deleteWeatherDataByTimestampAfter(time);
+	}
 	@Test
 	void testGetDeliveryFeeWithoutParams() throws Exception {
 		mvc.perform(get("/api/fee"))
