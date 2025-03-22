@@ -1,6 +1,7 @@
 # Fuijtsu-Programming-Task-2025
 
 Build the project in gradle and run spring boot application<br>
+Database can be found on http://localhost:8080/h2-console<br>
 <br>
 Endpoints:<br>
 GET http://localhost:8080/api/fee<br>
