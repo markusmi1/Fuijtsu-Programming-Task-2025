@@ -19,7 +19,9 @@ With datetime parameter applied<br>
 
 GET http://localhost:8080/api/basefee<br>
 Shows current base fees for each city<br>
-![image](https://github.com/user-attachments/assets/e5a368c1-8781-4c3c-8f1f-ca5f033ce15c)<br>
+<img src="https://github.com/user-attachments/assets/e5a368c1-8781-4c3c-8f1f-ca5f033ce15c" width="600">
+
+![image]()<br>
 
 PUT http://localhost:8080/api/basefee<br>
 Body must be in application/json format<br>
@@ -29,4 +31,5 @@ example body:<br>
     "vehicleType": "Scooter",<br>
     "newFee": 8<br>
 }<br>
-![image](https://github.com/user-attachments/assets/890cd4bb-2a6c-4d0f-85c4-04c7f8aeed66)<br>
+
+<img src="https://github.com/user-attachments/assets/890cd4bb-2a6c-4d0f-85c4-04c7f8aeed66" width="600">
