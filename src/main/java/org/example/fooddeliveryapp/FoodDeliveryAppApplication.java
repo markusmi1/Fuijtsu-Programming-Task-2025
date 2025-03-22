@@ -17,6 +17,10 @@ public class FoodDeliveryAppApplication implements CommandLineRunner {
 	public static void main(String[] args) {
 		SpringApplication.run(FoodDeliveryAppApplication.class, args);
 	}
+
+	/**
+	 * When app is booted then database gets the latest weather data
+	 */
 	@Override
 	public void run(String... args) throws Exception {
 		weatherDataScheduler.fetchWeatherData();

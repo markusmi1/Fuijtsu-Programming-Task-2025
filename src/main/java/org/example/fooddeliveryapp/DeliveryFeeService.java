@@ -3,6 +3,7 @@ package org.example.fooddeliveryapp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 /**
@@ -12,6 +13,8 @@ import java.util.Optional;
 public class DeliveryFeeService {
     @Autowired
     private WeatherDataService weatherDataService;
+    @Autowired
+    private BaseFeeService baseFeeService;
 
     /**
      * Calculates delivery fee
@@ -19,8 +22,8 @@ public class DeliveryFeeService {
      * @param vehicleType given vehicle type as input by user
      * @return String[] with length 2, first element being type of response and second element being delivery fee or error message
      */
-    public String[] calculateDeliveryFee(String city, String vehicleType) {
-        Optional<WeatherData> latestWeather = weatherDataService.getLatestWeatherData(city);
+    public String[] calculateDeliveryFee(String city, String vehicleType, LocalDateTime time) {
+        Optional<WeatherData> latestWeather = weatherDataService.getLatestWeatherData(city, time);
         System.out.println("Request received - City: " + city + ", Vehicle Type: " + vehicleType);
         String[] response = new String[2];
 
@@ -44,10 +47,11 @@ public class DeliveryFeeService {
     }
 
     private double getBaseFee(String city, String vehicleType) {
+
         switch (city) {
-            case "Tallinn": return vehicleType.equalsIgnoreCase("Car") ? 4.0 : vehicleType.equalsIgnoreCase("Scooter") ? 3.5 : 3.0;
-            case "Tartu": return vehicleType.equalsIgnoreCase("Car") ? 3.5 : vehicleType.equalsIgnoreCase("Scooter") ? 3.0 : 2.5;
-            case "Pärnu": return vehicleType.equalsIgnoreCase("Car") ? 3.0 : vehicleType.equalsIgnoreCase("Scooter") ? 2.5 : 2.0;
+            case "Tallinn": return vehicleType.equalsIgnoreCase("Car") ?  baseFeeService.getBaseFee("Tallinn", "Car").get().getFee() : vehicleType.equalsIgnoreCase("Scooter") ? baseFeeService.getBaseFee("Tallinn", "Scooter").get().getFee() : baseFeeService.getBaseFee("Tallinn", "Bike").get().getFee();
+            case "Tartu": return vehicleType.equalsIgnoreCase("Car") ? baseFeeService.getBaseFee("Tartu", "Car").get().getFee() : vehicleType.equalsIgnoreCase("Scooter") ? baseFeeService.getBaseFee("Tartu", "Scooter").get().getFee() : baseFeeService.getBaseFee("Tartu", "Bike").get().getFee();
+            case "Pärnu": return vehicleType.equalsIgnoreCase("Car") ? baseFeeService.getBaseFee("Pärnu", "Car").get().getFee() : vehicleType.equalsIgnoreCase("Scooter") ? baseFeeService.getBaseFee("Pärnu", "Scooter").get().getFee() : baseFeeService.getBaseFee("Pärnu", "Bike").get().getFee();
             default: return 0;
         }
     }
