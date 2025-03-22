@@ -9,19 +9,18 @@ city - possible values (Tallinn, Tartu, Pärnu)<br>
 vehicleType - possible values (Bike, Car, Scooter)<br>
 dateTime - can be absent, format must be - yyyy-MM-dd'T'HH:mm:ss, if present then shows fee on this particular datetime if data about it is in the database.<br>
 Example:<br>
-<img src="https://github.com/user-attachments/assets/2b2e3a8f-f047-48f6-8fc4-9365c78d9ba3" width="600">
-<img src="https://github.com/user-attachments/assets/c25f9e83-a6a4-4c98-a7ea-f3bbb543b7c0" width="600">
+<img src="https://github.com/user-attachments/assets/9e96e41f-6edc-427c-8a51-5c33e6ac155a" width="600"><br>
+<img src="https://github.com/user-attachments/assets/c25f9e83-a6a4-4c98-a7ea-f3bbb543b7c0" width="600"><br>
 With datetime parameter applied<br>
-<img src="https://github.com/user-attachments/assets/2b2e3a8f-f047-48f6-8fc4-9365c78d9ba3" width="600">
+<img src="https://github.com/user-attachments/assets/2b2e3a8f-f047-48f6-8fc4-9365c78d9ba3" width="600"><br>
 
 
 
 
 GET http://localhost:8080/api/basefee<br>
 Shows current base fees for each city<br>
-<img src="https://github.com/user-attachments/assets/e5a368c1-8781-4c3c-8f1f-ca5f033ce15c" width="600">
+<img src="https://github.com/user-attachments/assets/e5a368c1-8781-4c3c-8f1f-ca5f033ce15c" width="600"><br>
 
-![image]()<br>
 
 PUT http://localhost:8080/api/basefee<br>
 Body must be in application/json format<br>
