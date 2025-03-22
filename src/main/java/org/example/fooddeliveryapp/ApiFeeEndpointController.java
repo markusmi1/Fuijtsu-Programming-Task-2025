@@ -56,7 +56,7 @@ public class ApiFeeEndpointController {
 
         }
         LocalDateTime time = (dateTime != null) ? LocalDateTime.parse(dateTime) : LocalDateTime.now();
-
+        System.out.println(time);
         String[] result = deliveryFeeService.calculateDeliveryFee(city, vehicleType, time);
         response.put(result[0], result[1]);
         return response;

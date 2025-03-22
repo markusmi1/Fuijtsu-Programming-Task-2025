@@ -12,6 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 @EnableScheduling
 public class FoodDeliveryAppApplication implements CommandLineRunner {
 	@Autowired
+	private WeatherDataRepository weatherDataRepository;
+
+	@Autowired
 	private WeatherDataScheduler weatherDataScheduler;
 
 	public static void main(String[] args) {
@@ -23,7 +26,8 @@ public class FoodDeliveryAppApplication implements CommandLineRunner {
 	 */
 	@Override
 	public void run(String... args) throws Exception {
-		weatherDataScheduler.fetchWeatherData();
+		if (weatherDataRepository.count()==0)
+			weatherDataScheduler.fetchWeatherData();
 	}
 }
 

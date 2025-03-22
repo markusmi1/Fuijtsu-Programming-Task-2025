@@ -58,10 +58,8 @@ class FoodDeliveryAppApplicationTests {
 	/**
 	 * deletes fake data from database
 	 */
-	@AfterAll
-	void after(){
-		weatherDataRepository.deleteWeatherDataByTimestampAfter(time);
-	}
+
+
 	@Test
 	void testGetDeliveryFeeWithoutParams() throws Exception {
 		mvc.perform(get("/api/fee"))
@@ -72,13 +70,13 @@ class FoodDeliveryAppApplicationTests {
 	void testGetDeliveryFeeInvalidCity() throws Exception {
 		mvc.perform(get("/api/fee").param("city", "").param("vehicleType", "Bike"))
 				.andExpect(status().isOk())
-				.andExpect(content().json("{\"error\": \"Invalid city or vehicle type. Valid cities - (Tallinn-Harku, Tartu-Tõravere, Pärnu), Valid vehicle types - (Bike, Car, Scooter).\"}"));
+				.andExpect(content().json("{\"error\": \"Invalid city or vehicle type. Valid cities - (Tallinn, Tartu, Pärnu), Valid vehicle types - (Bike, Car, Scooter).\"}"));
 	}
 	@Test
 	void testGetDeliveryFeeInvalidVehicle() throws Exception {
 		mvc.perform(get("/api/fee").param("city", "Tartu").param("vehicleType", "bus"))
 				.andExpect(status().isOk())
-				.andExpect(content().json("{\"error\": \"Invalid city or vehicle type. Valid cities - (Tallinn-Harku, Tartu-Tõravere, Pärnu), Valid vehicle types - (Bike, Car, Scooter).\"}"));
+				.andExpect(content().json("{\"error\": \"Invalid city or vehicle type. Valid cities - (Tallinn, Tartu, Pärnu), Valid vehicle types - (Bike, Car, Scooter).\"}"));
 	}
 	@Test
 	void testWeatherPhenomenon() throws Exception{

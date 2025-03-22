@@ -20,14 +20,14 @@ class BaseFeeService {
         if (repository.count() == 0) {
             repository.saveAll(List.of(
                     new BaseFee("Tallinn", "Car", 4.0),
-                    new BaseFee("Tallinn", "Bike", 3.5),
-                    new BaseFee("Tallinn", "Scooter", 3.0),
+                    new BaseFee("Tallinn", "Scooter", 3.5),
+                    new BaseFee("Tallinn", "Bike", 3.0),
                     new BaseFee("Tartu", "Car", 3.5),
-                    new BaseFee("Tartu", "Bike", 3.0),
-                    new BaseFee("Tartu", "Scooter", 2.5),
+                    new BaseFee("Tartu", "Scooter", 3.0),
+                    new BaseFee("Tartu", "Bike", 2.5),
                     new BaseFee("Pärnu", "Car", 3.0),
-                    new BaseFee("Pärnu", "Bike", 2.5),
-                    new BaseFee("Pärnu", "Scooter", 2.0)
+                    new BaseFee("Pärnu", "Scooter", 2.5),
+                    new BaseFee("Pärnu", "Bike", 2.0)
             ));
         }
     }
