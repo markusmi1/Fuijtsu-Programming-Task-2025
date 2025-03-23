@@ -30,7 +30,7 @@ Shows current base fees for each city<br>
 
 
 PUT http://localhost:8080/api/basefee<br>
-Body must be in application/json format<br>
+Body must be in <strong>application/json</strong> format<br>
 <strong>Example body:</strong><br>
 {<br>
     "city": "Tallinn",<br>
