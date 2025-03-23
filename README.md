@@ -10,8 +10,7 @@ Parameter&nbsp;&nbsp;Type	Required	Description<br>
 <strong>city</strong> String,	 Required,     City names (Tallinn, Tartu, Pärnu)<br>
 <strong>vehicleType</strong> String,	Required,	    Vehicle types (Bike, Car, Scooter)<br>
 <strong>dateTime</strong>  String,	Not required,	    Format yyyy-MM-dd'T'HH:mm:ss<br><br>
-
-dateTime - can be absent, format must be - yyyy-MM-dd'T'HH:mm:ss, if present then shows fee on this particular datetime if data about it is in the database.<br>
+<br>
 <strong>Example link</strong> http://localhost:8080/api/fee?city=Tartu&vehicleType=Bike:<br>
 <img src="https://github.com/user-attachments/assets/9e96e41f-6edc-427c-8a51-5c33e6ac155a" width="600"><br>
 <img src="https://github.com/user-attachments/assets/c25f9e83-a6a4-4c98-a7ea-f3bbb543b7c0" width="600"><br>
