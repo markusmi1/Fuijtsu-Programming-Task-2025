@@ -7,7 +7,7 @@ Endpoints:<br>
 GET http://localhost:8080/api/fee<br>
 Parameters - <br>
 Parameter	Type	Required	Description<br>
-city	    String	✅ Yes	    City name (Tallinn, Tartu, Pärnu)<br>
+city	&nbsp;    String	✅ Yes	    City name (Tallinn, Tartu, Pärnu)<br>
 vehicleType	String	✅ Yes	    Vehicle type (Bike, Car, Scooter)<br>
 dateTime	String	❌ No	    Optional, format yyyy-MM-dd'T'HH:mm:ss<br><br>
 
