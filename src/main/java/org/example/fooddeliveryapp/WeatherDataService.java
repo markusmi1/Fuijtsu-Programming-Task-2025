@@ -28,6 +28,8 @@ public class WeatherDataService {
 
     public Optional<WeatherData> getLatestWeatherData(String city, LocalDateTime time) {
         String station = mapCityToStation(city);
+        if (time == null)
+            return station != null ? repository.findTopByStationNameOrderByTimestampDesc(station) : Optional.empty();
         return station != null ? repository.findWeatherDataByStationNameAndTimestampIsNear(station, time, 2000) : Optional.empty();
     }
 }

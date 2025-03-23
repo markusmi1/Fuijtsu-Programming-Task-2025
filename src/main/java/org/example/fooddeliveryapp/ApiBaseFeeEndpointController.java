@@ -49,8 +49,8 @@ class ApiBaseFeeEndpointController {
             response.put("error", "Invalid city or vehicle type. Valid cities - (Tallinn, Tartu, Pärnu), Valid vehicle types - (Bike, Car, Scooter).");
             return response;
         }
-        if (!body.getNewFee().matches("-?\\d+(\\.\\d+)?")){
-            response.put("error", "newFee must be double");
+        if (!body.getNewFee().matches("\\d+(\\.\\d+)?")){
+            response.put("error", "newFee must be double >=0");
             return response;
         }
         double fee = Double.parseDouble(body.getNewFee());

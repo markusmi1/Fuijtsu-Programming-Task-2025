@@ -24,7 +24,7 @@ public class DeliveryFeeService {
      */
     public String[] calculateDeliveryFee(String city, String vehicleType, LocalDateTime time) {
         Optional<WeatherData> latestWeather = weatherDataService.getLatestWeatherData(city, time);
-        System.out.println(latestWeather.get().getAirTemp()  +" "+latestWeather.get().getTimestamp()+" "+latestWeather.get().getWeatherPhenomenon()+latestWeather.get().getId());
+
         System.out.println("Request received - City: " + city + ", Vehicle Type: " + vehicleType);
         String[] response = new String[2];
 

@@ -48,14 +48,15 @@ public class ApiFeeEndpointController {
 
 
         if (dateTime!=null){
-            String regex = "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}$";
+            //datetime format check
+            String regex = "^\\d{4}-(0[1-9]|1[0-2])-([0-2][0-9]|3[01])T([0-1][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$";
             if (!Pattern.matches(regex, dateTime)) {
                 response.put("error", "Datetime is not in correct format (yyyy-MM-dd'T'HH:mm:ss)");
                 return response;
             }
 
         }
-        LocalDateTime time = (dateTime != null) ? LocalDateTime.parse(dateTime) : LocalDateTime.now();
+        LocalDateTime time = (dateTime != null) ? LocalDateTime.parse(dateTime) : null;
         System.out.println(time);
         String[] result = deliveryFeeService.calculateDeliveryFee(city, vehicleType, time);
         response.put(result[0], result[1]);
