@@ -5,9 +5,12 @@ Database can be found on http://localhost:8080/h2-console<br>
 <br>
 Endpoints:<br>
 GET http://localhost:8080/api/fee<br>
-parameters - <br>
-city - possible values (Tallinn, Tartu, Pärnu)<br>
-vehicleType - possible values (Bike, Car, Scooter)<br>
+Parameters - <br>
+Parameter	Type	Required	Description<br>
+city	    String	✅ Yes	    City name (Tallinn, Tartu, Pärnu)<br>
+vehicleType	String	✅ Yes	    Vehicle type (Bike, Car, Scooter)<br>
+dateTime	String	❌ No	    Optional, format yyyy-MM-dd'T'HH:mm:ss<br><br>
+
 dateTime - can be absent, format must be - yyyy-MM-dd'T'HH:mm:ss, if present then shows fee on this particular datetime if data about it is in the database.<br>
 Example:<br>
 <img src="https://github.com/user-attachments/assets/9e96e41f-6edc-427c-8a51-5c33e6ac155a" width="600"><br>
