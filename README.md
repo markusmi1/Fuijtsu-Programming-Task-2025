@@ -6,10 +6,10 @@ Database can be found on http://localhost:8080/h2-console<br>
 Endpoints:<br>
 GET http://localhost:8080/api/fee<br>
 Parameters - <br>
-Parameter	Type	Required	Description<br>
-city         &nbsp;&nbsp;&nbsp;&nbsp;           String	✅ Yes	    City name (Tallinn, Tartu, Pärnu)<br>
-vehicleType	String	✅ Yes	    Vehicle type (Bike, Car, Scooter)<br>
-dateTime	String	❌ No	    Optional, format yyyy-MM-dd'T'HH:mm:ss<br><br>
+Parameter&nbsp;&nbsp;Type	Required	Description<br>
+city&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String	✅ Yes	    City name (Tallinn, Tartu, Pärnu)<br>
+vehicleType&nbsp;&nbsp;&nbsp;&nbsp;String	✅ Yes	    Vehicle type (Bike, Car, Scooter)<br>
+dateTime&nbsp;&nbsp;&nbsp;&nbsp;String	❌ No	    Optional, format yyyy-MM-dd'T'HH:mm:ss<br><br>
 
 dateTime - can be absent, format must be - yyyy-MM-dd'T'HH:mm:ss, if present then shows fee on this particular datetime if data about it is in the database.<br>
 Example:<br>
