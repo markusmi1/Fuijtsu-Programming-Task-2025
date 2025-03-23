@@ -7,9 +7,9 @@ Endpoints:<br>
 GET http://localhost:8080/api/fee<br>
 Parameters - <br>
 Parameter&nbsp;&nbsp;Type	Required	Description<br>
-city     &nbsp;&nbsp;&nbsp;         String	✅ Yes	    City name (Tallinn, Tartu, Pärnu)<br>
-vehicleType&nbsp;&nbsp;&nbsp;&nbsp;String	✅ Yes	    Vehicle type (Bike, Car, Scooter)<br>
-dateTime&nbsp;&nbsp;&nbsp;&nbsp;String	❌ No	    Optional, format yyyy-MM-dd'T'HH:mm:ss<br><br>
+city String	 Required     City names (Tallinn, Tartu, Pärnu)<br>
+vehicleType String	Required	    Vehicle types (Bike, Car, Scooter)<br>
+dateTime  String	Not required	    Optional, format yyyy-MM-dd'T'HH:mm:ss<br><br>
 
 dateTime - can be absent, format must be - yyyy-MM-dd'T'HH:mm:ss, if present then shows fee on this particular datetime if data about it is in the database.<br>
 Example:<br>
