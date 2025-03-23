@@ -3,6 +3,7 @@
 Build the project in gradle and run spring boot application<br>
 Command: gradlew build<br>
 Run file \src\main\java\org\example\fooddeliveryapp\FoodDeliveryAppApplication.java<br>
+<br>
 Database can be found on http://localhost:8080/h2-console<br>
 <br>
 Endpoints:<br>
