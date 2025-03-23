@@ -15,9 +15,10 @@ Parameter&nbsp;&nbsp;Type	Required	Description<br>
 <strong>dateTime</strong>  String,	Not required,	    Format yyyy-MM-dd'T'HH:mm:ss<br><br>
 <br>
 <strong>Example link</strong> http://localhost:8080/api/fee?city=Tartu&vehicleType=Bike:<br>
-<img src="https://github.com/user-attachments/assets/9e96e41f-6edc-427c-8a51-5c33e6ac155a" width="600"><br>
-<img src="https://github.com/user-attachments/assets/c25f9e83-a6a4-4c98-a7ea-f3bbb543b7c0" width="600"><br>
-With datetime parameter applied<br>
+<img src="https://github.com/user-attachments/assets/9e96e41f-6edc-427c-8a51-5c33e6ac155a" width="600"><br><br>
+<strong>Example of when input is missing parameters:</strong><br>
+<img src="https://github.com/user-attachments/assets/c25f9e83-a6a4-4c98-a7ea-f3bbb543b7c0" width="600"><br><br>
+<strong>With datetime parameter applied</strong><br>
 <img src="https://github.com/user-attachments/assets/2b2e3a8f-f047-48f6-8fc4-9365c78d9ba3" width="600"><br>
 
 
