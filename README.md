@@ -19,11 +19,11 @@ Parameter&nbsp;&nbsp;Type	Required	Description<br>
 <strong>Example when input is missing parameters:</strong><br>
 <img src="https://github.com/user-attachments/assets/c25f9e83-a6a4-4c98-a7ea-f3bbb543b7c0" width="600"><br><br>
 <strong>With datetime parameter applied</strong><br>
-<img src="https://github.com/user-attachments/assets/2b2e3a8f-f047-48f6-8fc4-9365c78d9ba3" width="600"><br>
+<img src="https://github.com/user-attachments/assets/2b2e3a8f-f047-48f6-8fc4-9365c78d9ba3" width="600"><br><br>
 
 
 
-
+<strong>Bonus tasks:</strong>
 GET http://localhost:8080/api/basefee<br>
 Shows current base fees for each city<br>
 <img src="https://github.com/user-attachments/assets/e5a368c1-8781-4c3c-8f1f-ca5f033ce15c" width="600"><br>
