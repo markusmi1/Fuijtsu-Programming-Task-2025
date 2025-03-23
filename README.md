@@ -1,6 +1,8 @@
 # Fuijtsu-Programming-Task-2025
 
 Build the project in gradle and run spring boot application<br>
+Command: gradlew build<br>
+Run file \src\main\java\org\example\fooddeliveryapp\FoodDeliveryAppApplication.java<br>
 Database can be found on http://localhost:8080/h2-console<br>
 <br>
 Endpoints:<br>
