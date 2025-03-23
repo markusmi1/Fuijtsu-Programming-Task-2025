@@ -23,7 +23,7 @@ Parameter&nbsp;&nbsp;Type	Required	Description<br>
 
 
 
-<strong>Bonus tasks:</strong>
+<strong>Bonus tasks:</strong><br>
 GET http://localhost:8080/api/basefee<br>
 Shows current base fees for each city<br>
 <img src="https://github.com/user-attachments/assets/e5a368c1-8781-4c3c-8f1f-ca5f033ce15c" width="600"><br>
