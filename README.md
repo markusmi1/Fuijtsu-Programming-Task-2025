@@ -4,7 +4,7 @@ Build the project in gradle and run spring boot application<br>
 Command: gradlew build<br>
 Run file \src\main\java\org\example\fooddeliveryapp\FoodDeliveryAppApplication.java<br>
 <br>
-Database can be found on http://localhost:8080/h2-console<br>
+Database can be found on http://localhost:8080/h2-console and is created on initial startup, after this database is saved in /data folder<br>
 <br>
 Endpoints:<br>
 GET http://localhost:8080/api/fee<br>
